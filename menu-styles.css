@@ -1,0 +1,52 @@
+body {
+    background-color: #f8f8f8;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.menu-item h2 {
+    color: #333;
+}
+
+.menu-item p {
+    color: #666;
+}
+
+.menu-item:active {
+    transform: scale(0.95);
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 100%;
+    }
+}
